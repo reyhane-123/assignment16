@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course_list</title>
+</head>
+<body>
+    <ul>
+    {%for item in list%}
+        <li>
+            <a href="{{item.get_course_detail}}" target="_blank">{{item.course_name}}</a>
+        </li>
+        
+    {%endfor%}
+    </ul>
+</body>
+</html>
